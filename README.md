@@ -15,3 +15,6 @@ How to propose marriage with a puppy, a phone, and a Web Socket.
 12. Give your puppy a treat. She deserves it :-)
 
 ![Thanks Bailey! Vicky and I love you.](pup.png)
+
+## Technical Notes
+OpenSSL deprecation makes it difficult to get this project running on OS X in a virtualenv. Install dependencies in `requirements.txt` outside of a virtualenv and see ![Flask-uWSGI-WebSocket](https://github.com/zeekay/flask-uwsgi-websocket) for some platform-dependent instructions.
