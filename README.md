@@ -1,6 +1,8 @@
 # PuppyProposer
 How to propose marriage with a puppy, a phone, and a Web Socket.
 
+![Thanks Bailey! Vicky and I love you.](pup.png)
+
 1. Teach your pup to go to your partner on command.
 2. Give your laptop a static IP. On OS X go to the TCP/IP tab in advanced network settings, choose DHCP with manual address, and pick an IP. This address should match the one in `server.py`.
 3. Get your phone on the same wifi network as your laptop.
@@ -14,7 +16,7 @@ How to propose marriage with a puppy, a phone, and a Web Socket.
 11. Leave your laptop, find your partner, and propose.
 12. Give your puppy a treat. She deserves it :-)
 
-![Thanks Bailey! Vicky and I love you.](pup.png)
+
 
 ## Technical Notes
 OpenSSL deprecation makes it difficult to get this project running on OS X in a virtualenv. Install dependencies in `requirements.txt` outside of a virtualenv and see [Flask-uWSGI-WebSocket](https://github.com/zeekay/flask-uwsgi-websocket) for some platform-dependent instructions.
