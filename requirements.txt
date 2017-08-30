@@ -1,0 +1,4 @@
+flask
+Flask-uWSGI-WebSocket
+uwsgi
+gevent

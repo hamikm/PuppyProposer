@@ -1,3 +1,4 @@
 This file is polled for changes.
 Its last line is sent down the websocket when the last line is changed.
 So this is the line that would be sent to the browser.
+Hi man how you doin'. 
