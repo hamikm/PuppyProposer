@@ -8,12 +8,10 @@ How to propose marriage with a puppy, a phone, and a Web Socket.
 5. Navigate to `prop.html` on your phone. Chrome worked well for me.
 6. Choose your voice in the dropdown menu. My puppy is a girl, so I chose a female voice.
 7. Attach the phone to your puppy, making sure she's comfortable and the phone is secure.
-8. Tell your puppy to go to your S.O., and sit in front of your laptop. Stay in a nearby room so you can hear your S.O.
+8. Tell your puppy to go to your S.O. then sit in front of your laptop. Stay in a nearby room so you can hear your S.O.
 9. Type a sentence into `text_goes_here.txt`. It will be sent down the Web Socket to the browser on your puppy's back, which will speak it out loud.
 10. Listen for your partner's reaction and encourage her to speak to your talking puppy. Have a conversation with her, steering the topic to engagement.
 11. Leave your laptop, find your S.O., and propose.
 12. Give your puppy a treat. She deserves it :-)
 
-![Thanks Bailey!](pup.png)
-
-
+![Thanks Bailey! Vicky and I love you.](pup.png)
