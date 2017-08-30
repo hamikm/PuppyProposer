@@ -14,6 +14,6 @@ How to propose marriage with a puppy, a phone, and a Web Socket.
 11. Leave your laptop, find your S.O., and propose.
 12. Give your puppy a treat. She deserves it :-)
 
-![Thanks Bailey!](pup.jpg)
+![Thanks Bailey!](pup.png)
 
 
