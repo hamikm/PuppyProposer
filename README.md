@@ -19,10 +19,9 @@ How to propose marriage with a puppy, a phone, and a Web Socket.
 
 
 ## Technical Notes
-OpenSSL deprecation makes it a little difficult to get this project running in a virtualenv. Instead, (1) install dependencies in `requirements.txt` outside of a virtualenv, (2) compile and link openssl, and (3) install uwsgi with openssl awareness. The following were tested on OS X.
+OpenSSL deprecation makes it a little difficult to get this project running in a virtualenv. Instead, install dependencies outside a virtualenv with `pip install -r requirements.txt`, compile and link openssl, and install uwsgi with openssl awareness. The following were tested on OS X.
 
-1. `pip install -r requirements.txt`
-2. 
+### Compile and Link Openssl
 ```
 cd /usr/local/src
 sudo curl --remote-name https://www.openssl.org/source/openssl-1.0.2l.tar.gz
@@ -35,7 +34,9 @@ sudo make install
 ln -s /usr/local/openssl-1.0.2l/bin/openssl /usr/local/bin/openssl
 (close and open terminal)
 ```
-3. `CFLAGS="-I/usr/local/opt/openssl/include" LDFLAGS="-L/usr/local/opt/openssl/lib" UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I --no-cache-dir`
+
+### Install uwsgi
+`CFLAGS="-I/usr/local/opt/openssl/include" LDFLAGS="-L/usr/local/opt/openssl/lib" UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I --no-cache-dir`
 
 ## Non-technical Notes
 Congrats Hamik and Vicky! - Garrett
