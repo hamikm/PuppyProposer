@@ -4,7 +4,7 @@ import time
 from flask import Flask
 from flask_uwsgi_websocket import GeventWebSocket
 
-PROPOSER_STMTS_FILE = 'modify.txt'
+PROPOSER_STMTS_FILE = 'text_goes_here.txt'
 POLLING_INTERVAL_SECS = 0.5
 
 app = Flask(__name__)

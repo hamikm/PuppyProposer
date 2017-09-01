@@ -19,7 +19,23 @@ How to propose marriage with a puppy, a phone, and a Web Socket.
 
 
 ## Technical Notes
-OpenSSL deprecation makes it difficult to get this project running on OS X in a virtualenv. Install dependencies in `requirements.txt` outside of a virtualenv and see [Flask-uWSGI-WebSocket](https://github.com/zeekay/flask-uwsgi-websocket) for some platform-dependent instructions.
+OpenSSL deprecation makes it a little difficult to get this project running in a virtualenv. Instead, (1) install dependencies in `requirements.txt` outside of a virtualenv, (2) compile and link openssl, and (3) install uwsgi with openssl awareness. The following were tested on OS X.
+
+1. `pip install -r requirements.txt`
+2. 
+```
+cd /usr/local/src
+sudo curl --remote-name https://www.openssl.org/source/openssl-1.0.2l.tar.gz
+sudo tar -xzvf openssl-1.0.2l.tar.gz
+cd openssl-1.0.2l
+sudo ./Configure darwin64-x86_64-cc --prefix=/usr/local/openssl-1.0.2l sharedmake depend
+sudo make depend
+sudo make
+sudo make install
+ln -s /usr/local/openssl-1.0.2l/bin/openssl /usr/local/bin/openssl
+(close and open terminal)
+```
+3. `CFLAGS="-I/usr/local/opt/openssl/include" LDFLAGS="-L/usr/local/opt/openssl/lib" UWSGI_PROFILE_OVERRIDE=ssl=true pip install uwsgi -I --no-cache-dir`
 
 ## Non-technical Notes
 Congrats Hamik and Vicky! - Garrett
