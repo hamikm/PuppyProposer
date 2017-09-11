@@ -4,7 +4,7 @@ How to propose marriage with a puppy, a phone, and a Web Socket.
 ![Thanks Bailey! Vicky and I love you.](pup.png)
 
 1. Teach your pup to go to your partner on command.
-2. Give your laptop a static IP. On OS X go to the TCP/IP tab in advanced network settings, choose DHCP with manual address, and pick an IP. This address should match the one in `server.py`.
+2. Give your laptop a static IP. On OS X go to the TCP/IP tab in advanced network settings, choose DHCP with manual address, and pick an IP. This address should match `STATIC_IP` in `prop.js`.
 3. Get your phone on the same wifi network as your laptop.
 4. Run the Flask app: `python server.py`.
 5. Navigate to `prop.html` on your phone. Chrome worked well for me.
